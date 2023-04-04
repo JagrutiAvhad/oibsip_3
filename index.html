@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature converter</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <form id="calcTemp" onsubmit="calc();return false"> 
+            <label for="heading">Enter the temperature to convert</label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="diff" id="diff">
+                <option value="cel">&#176;Celsius-fahrenite</option>
+                <option value="fah">&#176;Fahrenheit-celsius</option>
+                <option value="fah1">&#176;Fahrenheit-kelvin</option>
+               <option value="kel">&#176;Kelvin-celsuis</option>
+               <option value="kel1">&#176;Kelvin-fahrenite</option>
+               <option value="cel1">&#176;Celsius-kelvin</option>
+            </select>
+            <br>
+            <input type="submit" id="submit">
+            <br>
+            <span id="result"></span>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
